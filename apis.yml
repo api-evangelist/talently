@@ -1,7 +1,24 @@
 aid: talently
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/talently.png
 name: Talently
-description: Talently is a company surfaced as a portfolio company of 500-global and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Talently is a Latin American tech hiring and talent marketplace connecting software
+  engineers and digital professionals (Tech, Marketing, Sales, Product, Customer Experience) with
+  technology companies across LATAM and the United States. The platform offers pre-evaluated talent,
+  free job postings, and a suite of hiring tools including per-country tech salary calculators, a
+  technical glossary, and specialized job boards. Backed by 500 Global. Public web surface spans
+  talently.tech plus hire, match, admin, strapi, and stream subdomains; it publishes an llms.txt
+  catalog for AI agents but exposes no public developer/API documentation at this time.
 url: https://raw.githubusercontent.com/api-evangelist/talently/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +28,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Recruiting
+- Talent Marketplace
+- Hiring
+- Jobs
+- Tech Talent
+- LATAM
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +44,15 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/talently-domain-security.yml
+- type: LLMsTxt
+  url: llms/talently-llms.txt
 - type: Website
   url: https://talently.tech
+
+x-enrichment:
+  date: '2026-07-21'
+  status: enriched
+  artifacts_added: 2
+  pass: local-v1
